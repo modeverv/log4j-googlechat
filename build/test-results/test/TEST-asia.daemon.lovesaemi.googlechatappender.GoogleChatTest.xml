@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="asia.daemon.lovesaemi.googlechatappender.GoogleChatTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-26T18:06:18" hostname="seijiro-MBP.local" time="4.621">
+  <properties/>
+  <testcase name="sendInfoWithoutStack" classname="asia.daemon.lovesaemi.googlechatappender.GoogleChatTest" time="4.621"/>
+  <system-out><![CDATA[https://chat.googleapis.com/v1/spaces/AAAAF2GKeUY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=PYdjM-CPC1Q5iBrC7CYvsKM49sKTcOi-wxKuXGFx8EU%3D
+<?xml version="1.0" ?>
+<Configuration packages="asia.daemon.lovesaemi">
+  <Appenders>
+    <GoogleChat name="googlechat" webhook="https://chat.googleapis.com/v1/spaces/AAAAF2GKeUY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&amp;token=PYdjM-CPC1Q5iBrC7CYvsKM49sKTcOi-wxKuXGFx8EU%3D">
+      <MarkerFilter onMatch="ACCEPT" onMismatch="DENY" marker="GOOGLECHAT"/>
+      <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}], %-5p, %t, %c, %m%n"/>
+    </GoogleChat>
+  </Appenders>
+  <Loggers>
+    <Root level="INFO">
+      <AppenderRef ref="googlechat"/>
+    </Root>
+  </Loggers>
+</Configuration>
+
+200
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

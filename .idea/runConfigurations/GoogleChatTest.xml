@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GoogleChatTest" type="GradleRunConfiguration" factoryName="Gradle">
+    <ExternalSystemSettings>
+      <option name="env">
+        <map>
+          <entry key="GOOGLECHAT_WEBHOOK" value="https://chat.googleapis.com/v1/spaces/AAAAF2GKeUY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&amp;token=PYdjM-CPC1Q5iBrC7CYvsKM49sKTcOi-wxKuXGFx8EU%3D" />
+        </map>
+      </option>
+      <option name="executionName" />
+      <option name="externalProjectPath" value="$PROJECT_DIR$" />
+      <option name="externalSystemIdString" value="GRADLE" />
+      <option name="scriptParameters" value="--tests &quot;asia.daemon.lovesaemi.googlechatappender.GoogleChatTest&quot;" />
+      <option name="taskDescriptions">
+        <list />
+      </option>
+      <option name="taskNames">
+        <list>
+          <option value=":test" />
+        </list>
+      </option>
+      <option name="vmOptions" value="" />
+    </ExternalSystemSettings>
+    <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+    <method v="2" />
+  </configuration>
+</component>

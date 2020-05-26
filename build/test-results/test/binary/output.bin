@@ -1,0 +1,17 @@
+œhttps://chat.googleapis.com/v1/spaces/AAAAF2GKeUY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=PYdjM-CPC1Q5iBrC7CYvsKM49sKTcOi-wxKuXGFx8EU%3D
+<?xml version="1.0" ?>
+1<Configuration packages="asia.daemon.lovesaemi">
+  <Appenders>
+Í    <GoogleChat name="googlechat" webhook="https://chat.googleapis.com/v1/spaces/AAAAF2GKeUY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&amp;token=PYdjM-CPC1Q5iBrC7CYvsKM49sKTcOi-wxKuXGFx8EU%3D">
+M      <MarkerFilter onMatch="ACCEPT" onMismatch="DENY" marker="GOOGLECHAT"/>
+S      <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}], %-5p, %t, %c, %m%n"/>
+    </GoogleChat>
+  </Appenders>
+  <Loggers>
+    <Root level="INFO">
+&      <AppenderRef ref="googlechat"/>
+    </Root>
+  </Loggers>
+</Configuration>
+
+200
