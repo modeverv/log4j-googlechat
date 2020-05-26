@@ -21,10 +21,10 @@ To use this plugin, add the following to your `log4j2.xml` configuration (or tra
 ```
 <Configuration>
     <Appenders>
-        <Slack name="slack" webhook="https://chat.googleapis.com/v1/spa...">
+        <GoogleChat name="slack" webhook="https://chat.googleapis.com/v1/spa...">
             <MarkerFilter onMatch="ACCEPT" onMismatch="DENY" marker="GOOGLECHAT"/>
             <PatternLayout pattern="%m"/>
-        </Slack>
+        </GoogleChat>
     </Appenders>
     <Loggers>
         <Root level="info">
@@ -34,7 +34,7 @@ To use this plugin, add the following to your `log4j2.xml` configuration (or tra
 </Configuration>
 ```
 
-Using the MarkerFilter configuration like this allows you to send a log message to Slack from any class.
+Using the MarkerFilter configuration like this allows you to send a log message to GoogleChat from any class.
 By using the `GOOGLECHAT` marker, this allows the configuration to filter all messages with that marker and make sure to send them to the GoogleChatAppender.
 As long as you don't override the additivity property of the relevant loggers, then these log messages will also be logged to the console or file or whatever you have configured normally.
 Read more about markers [here](https://logging.apache.org/log4j/2.x/manual/markers.html).
