@@ -4,10 +4,15 @@ This is a simple webhook-based Google Chat appender for Log4j 2.x.
 To use this appender in your code, first get a webhook URL from Google Chat.
 Then, add this to your project's dependencies:
 
-TODO
 ```
+allprojects {
+   repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+   }
+}
 dependencies {
-    compile 'com.uptake.log4j:log4j-slack:1.0'
+        implementation 'com.github.modeverv:log4j-googlechat:0.0.1'
 }
 ```
 
