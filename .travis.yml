@@ -1,2 +1,4 @@
 sudo: false
 language: java
+env:
+  - GOOGLECHAT_WEBHOOK="https://chat.googleapis.com/v1/spaces/AAAAcHAPua0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=9xCY1DggDxk2tjzd5wJscaDHJFpN1RouVhLWPkZiYhs%3D"

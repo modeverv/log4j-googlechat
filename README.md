@@ -1,4 +1,4 @@
-# Google Chat Appender for Log4j
+# Google Chat Appender for Log4j ![](https://travis-ci.org/modeverv/log4j-googlechat.svg?branch=master)
 
 This is a simple webhook-based Google Chat appender for Log4j 2.x.
 To use this appender in your code, first get a webhook URL from Google Chat.
@@ -48,7 +48,7 @@ The following are all the configuration attributes or elements supported:
 * webhook: URL to the Slack webhook to send messages to.
 
 ## Test
-set env value and run test.
+set environment variable and run test.
 ```
 GOOGLECHAT_WEBHOOK="https://...." ./gradlew test
 ```
