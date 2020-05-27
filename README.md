@@ -62,5 +62,8 @@ GOOGLECHAT_WEBHOOK="https://...." ./gradlew test
 
 Submit pull requests.
 
+## License
+Apache License, Version 2.0
+
 ## Thanks
 [log4j-slack](https://github.com/jvz/log4j-slack)  
