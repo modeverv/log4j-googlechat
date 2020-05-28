@@ -43,11 +43,21 @@ public class GoogleChatTest {
         Configurator.initialize(builder.build());
     }
 
-
     @Test
-    public void sendInfoWithoutStack() throws InterruptedException {
+    public void sendInfo() throws InterruptedException {
         Marker GOOGLECHAT = MarkerManager.getMarker("GOOGLECHAT");
         LogManager.getLogger(getClass()).warn(GOOGLECHAT,"Test warning message");
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void sendInfoLong() throws InterruptedException {
+        Marker GOOGLECHAT = MarkerManager.getMarker("GOOGLECHAT");
+        StringBuilder sb = new StringBuilder();
+        for(int i=0,l=3001;i<l;i++){
+            sb.append("韻");
+        }
+        LogManager.getLogger(getClass()).warn(GOOGLECHAT,sb.toString());
         Thread.sleep(2000);
     }
 }

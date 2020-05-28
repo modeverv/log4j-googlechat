@@ -23,7 +23,7 @@ public class GoogleChatManager extends AbstractManager {
         this.webhook = webhook;
     }
 
-    public void sendMessage(final String message) {
+    public void sendMessage(String message) {
         try {
             HttpURLConnection connection = (HttpURLConnection) webhook.openConnection();
             connection.setDoOutput(true);
@@ -31,6 +31,7 @@ public class GoogleChatManager extends AbstractManager {
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Content-Type", "application/json");
             connection.connect();
+            message = message.substring(0,Math.min(message.length(),3000));
             try (JsonGenerator generator = factory.createGenerator(connection.getOutputStream())) {
                 generator.writeStartObject();
                 generator.writeStringField("text", message);
