@@ -1,4 +1,4 @@
-# Google Chat Appender for Log4j ![](https://travis-ci.org/modeverv/log4j-googlechat.svg?branch=master)
+# Google Chat Appender for Log4j [![Build Status](https://travis-ci.org/modeverv/log4j-googlechat.svg?branch=master)](https://travis-ci.org/modeverv/log4j-googlechat)
 
 This is a simple webhook-based Google Chat appender for Log4j 2.x.
 To use this appender in your code, first get a webhook URL from Google Chat.
