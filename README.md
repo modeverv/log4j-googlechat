@@ -19,7 +19,7 @@ dependencies {
 To use this plugin, add the following to your `log4j2.xml` configuration (or translate to your preferred format):
 
 ```
-<Configuration>
+<Configuration packages="asia.daemon.lovesaemi.googlechatappender">
     <Appenders>
         <GoogleChat name="googlechat" webhook="https://chat.googleapis.com/v1/spa...">
             <MarkerFilter onMatch="ACCEPT" onMismatch="DENY" marker="GOOGLECHAT"/>

@@ -38,7 +38,7 @@ public class GoogleChatManager extends AbstractManager {
                 generator.writeEndObject();
             }
             int responseCode = connection.getResponseCode();
-            System.out.println(responseCode);
+            //System.out.println(responseCode);
             if (responseCode != HttpURLConnection.HTTP_OK) {
                 System.out.println(connection.getResponseMessage());
                 throw new AppenderLoggingException("Got a non-200 status: " + responseCode);
